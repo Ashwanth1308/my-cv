@@ -1,0 +1,219 @@
+
+    <div class="grid container gradient-background " >
+        <div class="grid-item first sec">
+            <img src="ad5d5a8a552c6937d8004c9c2ea8c6fb.jpg" alt="">
+            <div class="overlay-text"></div>
+            
+        </div>
+        <div class=" grid-item second sec"> 
+             
+             <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+            </div>
+        <div class=" grid-item third sec"> 
+              
+              <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+            </div>
+        <div class=" grid-item fourth sec">
+            
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+        </div>
+        <div class="grid-item fifth sec">
+            
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+        </div>
+        <div class=" grid-item sixth sec">
+          
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div> 
+        </div>
+        <div class="grid-item seventh sec">
+          
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+        </div>
+        <div class="grid-item eight sec">
+           
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+        </div>
+        <div class="grid-item ninth sec">
+           
+            <div class="overlay-text">dsfsdfdsgdgfgfdgdfgdfg sgsdgfsdfgsdfgsdgfds fggfsgfsdfgsds dgsg sdgsdf</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        section 1 and 2
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="image"><img src="./ad5d5a8a552c6937d8004c9c2ea8c6fb.jpg" alt="background image" height="650" width="100%">
+    </div>
+   <div class="name-container">
+        <h1> A s h w a n t h.</h1>
+        <p>CEO Of ASH Clothing Brand</p>
+    </div>
+   
+   <div class="flex-container">
+    <div class="grid-container1">
+     <div class="grid-item1"><img src="../education-industry.jpg" alt="" height="200" width="400" style="border-radius: 20px 30px 40px 80px;"></div >
+        <div class="grid-item2">
+            <h2>High school</h2>
+            <h5>bosco academy mat higher sec school</h5>
+            <p>chennai, tamilnadu</p>
+        </div>
+        <div class="grid-item3">
+            <h2>under-graduate</h2>
+            <h5>st.thomas clg of arts and science</h5>
+            <p>chennai,tamilnadu</p>
+        </div>
+     </div> 
+    </div> 
+
+    
+    <div class="flex-container1">
+    <div class="grid-container2" >
+        <div class="grid-item1">
+
+        </div>
+       
+
+
+
+    </div>
+    </div>
+   
+   
+
+
+  
+    
+       
+      
+</body>
+
+</html>
+
+
+
+section 1,2,3 css
+body {
+    margin: 0;
+    padding: 0;
+    height:100%
+}
+.grid{
+    display: grid;
+    height: 750px;
+    grid-template-columns: repeat(3 , 200px);
+    grid-template-rows:repeat(3,200px);
+    grid-column-gap: 100px;
+   justify-content: center;
+   align-items: center;
+   
+    
+}
+.grid-item{
+    position: relative;
+  }
+    
+    .grid-item img{
+      display: block;
+      height: 100%;
+      width: 100%;
+   
+      
+    }
+    .overlay-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+.image{
+    position: relative;
+   
+    
+}
+.name-container{
+    position: absolute;
+    top: 150px;
+    left: 42%
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    
+
+}
+p{
+    text-align: center;
+    
+}
+
+
+.first{
+    background: linear-gradient(-45deg, #000, #5950c4, #000000);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    border-radius: 10px;
+}
+
+
+.gradient-background {
+    background: linear-gradient(-45deg, #000, #5950c4, #000000);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.flex-container{
+    display: inline-flex;
+    flex-direction: row;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+   
+}
+.grid-item1{
+grid-column-start: 1;
+grid-column-end: 3;  
+
+}
+.flex-container1{
+    display: inline-flex;
+    flex-direction:row;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+   
+}
+ 

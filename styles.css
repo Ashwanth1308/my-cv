@@ -1,0 +1,248 @@
+body{
+  margin: 0;
+}
+
+.container{
+  
+  background-image: url(./ad5d5a8a552c6937d8004c9c2ea8c6fb.jpg);
+  height: 110vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+H1{
+ 
+  text-shadow: 1px 1px 2px #865DFF, 0 0 1em violet, 0 0 0.2em gray;
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 12;
+ text-align: center;
+}
+.container>P{
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+  font-size: 21px;
+  text-shadow: 1px 1px 2px #865DFF,0 0 0.2em gray , 0 0 1em violet;
+}
+.flex-container{
+  display:inline-flex ;
+  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+ height: 70vh;
+ gap: 30px;
+ 
+}
+.like{
+  flex-basis: 300px;
+  color: white;
+ 
+  
+}
+.hobbies{
+  flex-basis: 300px;
+  color: white;
+
+}
+.aim{
+  flex-basis: 300px;
+  color: white;
+}
+.like >h2 ,.hobbies>h2, .aim>h2{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  font-size: 21px;
+  letter-spacing: 6;
+  
+}
+.like , .hobbies,.aim >ol{
+  font-family: 'Ysabeau', sans-serif;
+  text-align: justify;
+  
+}
+.mini-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+}
+.middle-container{
+  display: flex;
+  height: 70vh;
+  width: 377.95px;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container>img{
+  object-fit:cover ;
+  border-radius: 50%;
+}
+.right-container{
+  display: flex;
+  height: 70vh;
+  width: 300px;
+  margin-right: 10px;
+}
+.about-me>h2{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  font-size: 21px;
+  letter-spacing: 6
+  
+  
+}
+.about-me>p{
+  font-family: 'Ysabeau', sans-serif;
+  text-align: justify;
+  color: white;
+}
+p::selection{
+  background-color: black;
+}
+
+.grid-container{
+  display: grid;
+  height: 600px;
+  width: 100%;
+  gap: px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  text-align: justify;
+  align-items: center;
+  
+}
+.grid-container> .one,.five,.seven{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  font-size: 21px;
+  letter-spacing: 6
+  
+}
+.nine h3{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+ 
+  font-size: 21px;
+  text-shadow: 1px 1px 2px #865DFF,0 0 0.2em gray , 0 0 1em violet;
+}
+
+.grid-container>.two,.three,.four,.six,.eight,.nine{
+  font-family: 'Ysabeau', sans-serif;
+  text-align: justify;
+  color: white;
+}
+
+.gradient-background {
+  background: linear-gradient(-45deg, #000, #5950c4, #000000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 250vh;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ @media (max-width:1200px) { 
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 72px;
+    
+  }
+  
+  
+
+}
+@media (max-width:743px){
+  .flex-container{
+    margin-bottom: 70px;
+  }
+  .middle-container{
+    background: linear-gradient(-45deg, #000, #5950c4, #000000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  width: 100%;
+ 
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.right-container{
+  background: linear-gradient(-45deg, #000, #5950c4, #000000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  width: 100%;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+ .flex-footer{
+
+ }
+}
+
+.flex-footer{
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-top: 70px;
+}
+.grid-footer{
+  display: grid;
+  height: 130;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.item-one{
+  flex-basis: 459px;
+}
+.item-two{
+  flex-basis: 459px;
+}
+.item-three{
+  flex-basis: 459px;
+}
+.grid-table{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr auto;
+}
+.item-two>p{
+  font-family: 'Orbitron', sans-serif;
+
+}
+  
+
